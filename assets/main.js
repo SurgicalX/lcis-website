@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.year').forEach(y=>y.textContent=new Date().getFullYear());const b=document.getElementById('menuBtn'),n=document.getElementById('siteNav');if(b){b.addEventListener('click',()=>{n.style.display=n.style.display==='block'?'none':'block'})}})
