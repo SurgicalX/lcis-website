@@ -15,7 +15,19 @@ nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;flex-wrap:wrap}n
 .hero{background:linear-gradient(180deg,#0b1a39 0%,#0e234b 60%, #0f274f 100%);color:#fff;padding:56px 0 36px}
 .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.2;margin:0 0 10px}.hero p{max-width:760px;color:#cbd5e1;margin:.4rem 0 1rem}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}.button{display:inline-block;padding:10px 16px;border-radius:10px;border:2px solid transparent;background:#fff;color:#0b1a39;font-weight:700}
-.button.secondary{background:transparent;color:#fff;border-color:#93c5fd}.button:hover{filter:brightness(.98);text-decoration:none}
+/* Outline button on light backgrounds */
+.button.secondary{
+  background:transparent;
+  color:var(--brand);
+  border-color:var(--brand);
+}
+
+/* When placed on a dark section, flip to white for contrast */
+.on-dark .button.secondary{
+  color:#fff;
+  border-color:#93c5fd;
+}
+
 .section{padding:44px 0}.section.alt{background:var(--surface)}
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .card{border:1px solid var(--border);border-radius:var(--radius);background:#fff;padding:18px}.card h3{margin-top:6px}
